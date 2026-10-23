@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://masdig.vercel.app/sitemap.xml

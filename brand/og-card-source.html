@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #0B0D0C; color: #F4F5F4; font-family: 'Sora', sans-serif; position: relative;
+  }
+  .aura {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(46vw 46vw at -6% -12%, rgba(52,211,153,.20), transparent 60%),
+      radial-gradient(40vw 40vw at 106% 112%, rgba(14,92,70,.28), transparent 62%),
+      radial-gradient(30vw 30vw at 72% 30%, rgba(22,51,43,.30), transparent 60%);
+  }
+  .grain { position: absolute; inset: 0; opacity: .4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .frame { position: absolute; inset: 26px; border: 1px solid rgba(255,255,255,.14); }
+  .content { position: absolute; inset: 0; padding: 74px 88px 56px; display: flex; flex-direction: column; }
+  .kicker { display: flex; align-items: center; gap: 14px; font-size: 14.5px; letter-spacing: .32em; text-transform: uppercase; color: rgba(244,245,244,.55); margin-bottom: 40px; }
+  .kicker::before { content: ''; width: 40px; height: 1px; background: #34d399; }
+  .kicker b { color: #34d399; }
+  h1 { font-weight: 800; line-height: .92; letter-spacing: -.02em; font-size: 132px; text-transform: uppercase;
+       background: linear-gradient(100deg, #f4f5f4 20%, #7dd7b6 55%, #34d399 85%);
+       -webkit-background-clip: text; background-clip: text; color: transparent; display: inline-block; width: fit-content; }
+  .row2 { display: flex; align-items: center; gap: 20px; margin-top: 16px; }
+  .row2 em { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 500; font-size: 44px; color: rgba(244,245,244,.75); }
+  .tags { display: flex; gap: 10px; margin-top: 26px; }
+  .tags span { font-size: 12.5px; letter-spacing: .18em; text-transform: uppercase; color: rgba(244,245,244,.6); border: 1px solid rgba(255,255,255,.16); padding: 9px 16px; border-radius: 999px; }
+  .footer { margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid rgba(255,255,255,.14); padding-top: 24px; }
+  .byline { font-size: 16px; color: rgba(244,245,244,.6); line-height: 1.5; }
+  .byline b { color: #f4f5f4; font-weight: 700; }
+  .url { font-size: 16px; letter-spacing: .08em; color: #34d399; font-weight: 700; }
+  .dot { position: absolute; width: 10px; height: 10px; border-radius: 50%; background: #34d399; top: 62px; right: 66px; box-shadow: 0 0 44px 10px rgba(52,211,153,.5); }
+</style>
+</head>
+<body>
+  <div class="aura"></div><div class="grain"></div><div class="frame"></div><div class="dot"></div>
+  <div class="content">
+    <div class="kicker">Official launch <b>·</b> October 2026</div>
+    <h1>MASDIG</h1>
+    <div class="row2"><em>design · web · SEO · digital ads — worldwide</em></div>
+    <div class="tags">
+      <span>Posters &amp; branding</span><span>Websites &amp; UI/UX</span><span>SEO optimization</span><span>Ad campaigns</span>
+    </div>
+    <div class="footer">
+      <div class="byline">An independent venture by <b>Mohammed Adil S</b><br>Kerala, India · clients worldwide</div>
+      <div class="url">masdig.vercel.app</div>
+    </div>
+  </div>
+</body>
+</html>
